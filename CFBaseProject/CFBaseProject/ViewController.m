@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "UINavigationController+QMUI.h"
 
-@interface ViewController ()<UINavigationControllerBackButtonHandlerProtocol,QMUICustomNavigationBarTransitionDelegate>
+@interface ViewController ()<UINavigationControllerBackButtonHandlerProtocol>
 
 @end
 
@@ -29,35 +29,7 @@
     ViewController *vc = [ViewController new];
     [self.navigationController pushViewController:vc animated:YES];
 }
-#pragma mark - <QMUINavigationControllerDelegate>
 
-- (void)navigationController:(CFUINavigationController *)navigationController poppingByInteractiveGestureRecognizer:(UIScreenEdgePanGestureRecognizer *)gestureRecognizer viewControllerWillDisappear:(UIViewController *)viewControllerWillDisappear viewControllerWillAppear:(UIViewController *)viewControllerWillAppear {
-    
-    if (gestureRecognizer.state == UIGestureRecognizerStateEnded) {
-        if (viewControllerWillDisappear == self) {
-//            [QMUITips showSucceed:@"松手了，界面发生切换"];
-        } else if (viewControllerWillAppear == self) {
-//            [QMUITips showInfo:@"松手了，没有触发界面切换"];
-        }
-//        [self resetStateLabel];
-        return;
-    }
-    
-    NSString *stateString = nil;
-    UIColor *stateColor = nil;
-    if (gestureRecognizer.state == UIGestureRecognizerStateBegan) {
-        stateString = @"触发手势返回";
-//        stateColor = [UIColorBlue colorWithAlphaComponent:.5];
-    } else if (gestureRecognizer.state == UIGestureRecognizerStateChanged) {
-        stateString = @"手势返回中";
-//        stateColor = [UIColorGreen colorWithAlphaComponent:.5];
-    } else {
-        return;
-    }
-    NSLog(@"%@", stateString);
-//    self.stateLabel.text = stateString;
-//    self.stateLabel.backgroundColor = stateColor;
-}
 #pragma mark - UINavigationControllerBackButtonHandlerProtocol
 
 - (BOOL)shouldHoldBackButtonEvent {
@@ -84,12 +56,7 @@
     }
 }
 
-//- (BOOL)shouldCustomNavigationBarTransitionWhenPushDisappearing {
-//    return self.customNavBarTransition && (self.barStyle != self.viewController.barStyle);
-//}
-//- (BOOL)shouldCustomNavigationBarTransitionWhenPopDisappearing {
-//    return self.customNavBarTransition && (self.barStyle != self.previousBarStyle);
-//}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

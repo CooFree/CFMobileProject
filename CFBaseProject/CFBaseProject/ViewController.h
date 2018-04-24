@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CFUINavigationController.h"
 
-@interface ViewController : UIViewController<QMUINavigationControllerTransitionDelegate>
+@interface ViewController : UIViewController
 
 
 @end

@@ -16,7 +16,6 @@
 		CE2705922086F1A80041CCF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2705912086F1A80041CCF0 /* main.m */; };
 		CE27059C2086F1A80041CCF0 /* CFBaseProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE27059B2086F1A80041CCF0 /* CFBaseProjectTests.m */; };
 		CE2705A72086F1A80041CCF0 /* CFBaseProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2705A62086F1A80041CCF0 /* CFBaseProjectUITests.m */; };
-		CE2705B82086F5760041CCF0 /* CFUINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2705B72086F5760041CCF0 /* CFUINavigationController.m */; };
 		CE488C482088767900CC824F /* ViewController+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CE488C472088767900CC824F /* ViewController+extension.m */; };
 		CE488C4B2088787500CC824F /* UINavigationController+QMUI.m in Sources */ = {isa = PBXBuildFile; fileRef = CE488C492088787400CC824F /* UINavigationController+QMUI.m */; };
 /* End PBXBuildFile section */
@@ -56,8 +55,6 @@
 		CE2705A22086F1A80041CCF0 /* CFBaseProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CFBaseProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2705A62086F1A80041CCF0 /* CFBaseProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFBaseProjectUITests.m; sourceTree = "<group>"; };
 		CE2705A82086F1A80041CCF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE2705B62086F5760041CCF0 /* CFUINavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFUINavigationController.h; sourceTree = "<group>"; };
-		CE2705B72086F5760041CCF0 /* CFUINavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFUINavigationController.m; sourceTree = "<group>"; };
 		CE488C462088767900CC824F /* ViewController+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+extension.h"; sourceTree = "<group>"; };
 		CE488C472088767900CC824F /* ViewController+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+extension.m"; sourceTree = "<group>"; };
 		CE488C492088787400CC824F /* UINavigationController+QMUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+QMUI.m"; sourceTree = "<group>"; };
@@ -115,10 +112,7 @@
 				CE2705B52086F5380041CCF0 /* BaseVC */,
 				CE27057F2086F1A70041CCF0 /* AppDelegate.h */,
 				CE2705802086F1A70041CCF0 /* AppDelegate.m */,
-				CE488C462088767900CC824F /* ViewController+extension.h */,
-				CE488C472088767900CC824F /* ViewController+extension.m */,
-				CE488C4A2088787400CC824F /* UINavigationController+QMUI.h */,
-				CE488C492088787400CC824F /* UINavigationController+QMUI.m */,
+				CEFDC8AA208EC8AB0053D5BC /* Category */,
 				CE2705822086F1A70041CCF0 /* ViewController.h */,
 				CE2705832086F1A70041CCF0 /* ViewController.m */,
 				CE2705852086F1A80041CCF0 /* Main.storyboard */,
@@ -152,10 +146,19 @@
 		CE2705B52086F5380041CCF0 /* BaseVC */ = {
 			isa = PBXGroup;
 			children = (
-				CE2705B62086F5760041CCF0 /* CFUINavigationController.h */,
-				CE2705B72086F5760041CCF0 /* CFUINavigationController.m */,
 			);
 			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		CEFDC8AA208EC8AB0053D5BC /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				CE488C462088767900CC824F /* ViewController+extension.h */,
+				CE488C472088767900CC824F /* ViewController+extension.m */,
+				CE488C4A2088787400CC824F /* UINavigationController+QMUI.h */,
+				CE488C492088787400CC824F /* UINavigationController+QMUI.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,7 +295,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE27058A2086F1A80041CCF0 /* CFBaseProject.xcdatamodeld in Sources */,
-				CE2705B82086F5760041CCF0 /* CFUINavigationController.m in Sources */,
 				CE488C482088767900CC824F /* ViewController+extension.m in Sources */,
 				CE2705842086F1A70041CCF0 /* ViewController.m in Sources */,
 				CE2705922086F1A80041CCF0 /* main.m in Sources */,
