@@ -8,6 +8,9 @@
 
 #import "ViewController.h"
 #import "UINavigationController+QMUI.h"
+#import "UIViewController+HBD.h"
+#import "HBDNavigationController.h"
+//#import "YPGradientDemoViewController.h"
 
 @interface ViewController ()<UINavigationControllerBackButtonHandlerProtocol>
 
@@ -26,14 +29,15 @@
     [self.view addSubview:btn];
 }
 - (void)btnClick {
-    ViewController *vc = [ViewController new];
+//    ViewController *vc = [ViewController new];
+    UIViewController *vc = [self createDemoViewController];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - UINavigationControllerBackButtonHandlerProtocol
 
 - (BOOL)shouldHoldBackButtonEvent {
-    return YES;
+    return NO;
 }
 
 - (BOOL)canPopViewController {
@@ -57,10 +61,30 @@
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
+
+
+
+
+
+
+
+- (UIViewController *)createDemoViewController {
+    ViewController *vc = [ViewController new];
+    
+    vc.hbd_barShadowHidden = NO;
+    vc.hbd_barHidden = NO;
+    vc.hbd_barStyle = UIBarStyleDefault;
+    UIColor *color = @[
+                       [UIColor colorWithRed:247/255.0 green:247/255.0 blue:247/255.0 alpha:0.8],
+                       [UIColor colorWithRed:28/255.0 green:28/255.0 blue:28/255.0 alpha:0.729],
+                       [UIColor.redColor colorWithAlphaComponent:0.7],
+                       [UIColor.greenColor colorWithAlphaComponent:0.7],
+                       [UIColor.blueColor colorWithAlphaComponent:0.8]
+                       ][arc4random()%5];
+    
+    vc.hbd_barTintColor = color;
+    return vc;
+}
 
 @end

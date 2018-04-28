@@ -18,6 +18,9 @@
 		CE2705A72086F1A80041CCF0 /* CFBaseProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2705A62086F1A80041CCF0 /* CFBaseProjectUITests.m */; };
 		CE488C482088767900CC824F /* ViewController+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CE488C472088767900CC824F /* ViewController+extension.m */; };
 		CE488C4B2088787500CC824F /* UINavigationController+QMUI.m in Sources */ = {isa = PBXBuildFile; fileRef = CE488C492088787400CC824F /* UINavigationController+QMUI.m */; };
+		CEB9661520946AD000B49CA1 /* UIViewController+HBD.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB9661020946AD000B49CA1 /* UIViewController+HBD.m */; };
+		CEB9661620946AD000B49CA1 /* HBDNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB9661120946AD000B49CA1 /* HBDNavigationController.m */; };
+		CEB9661720946AD000B49CA1 /* HBDNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB9661420946AD000B49CA1 /* HBDNavigationBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,12 @@
 		CE488C472088767900CC824F /* ViewController+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+extension.m"; sourceTree = "<group>"; };
 		CE488C492088787400CC824F /* UINavigationController+QMUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+QMUI.m"; sourceTree = "<group>"; };
 		CE488C4A2088787400CC824F /* UINavigationController+QMUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+QMUI.h"; sourceTree = "<group>"; };
+		CEB9660F20946ACF00B49CA1 /* UIViewController+HBD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HBD.h"; sourceTree = "<group>"; };
+		CEB9661020946AD000B49CA1 /* UIViewController+HBD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HBD.m"; sourceTree = "<group>"; };
+		CEB9661120946AD000B49CA1 /* HBDNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBDNavigationController.m; sourceTree = "<group>"; };
+		CEB9661220946AD000B49CA1 /* HBDNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBDNavigationController.h; sourceTree = "<group>"; };
+		CEB9661320946AD000B49CA1 /* HBDNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBDNavigationBar.h; sourceTree = "<group>"; };
+		CEB9661420946AD000B49CA1 /* HBDNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBDNavigationBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +127,12 @@
 				CE2705852086F1A80041CCF0 /* Main.storyboard */,
 				CE27058B2086F1A80041CCF0 /* Assets.xcassets */,
 				CE27058D2086F1A80041CCF0 /* LaunchScreen.storyboard */,
+				CEB9661320946AD000B49CA1 /* HBDNavigationBar.h */,
+				CEB9661420946AD000B49CA1 /* HBDNavigationBar.m */,
+				CEB9661220946AD000B49CA1 /* HBDNavigationController.h */,
+				CEB9661120946AD000B49CA1 /* HBDNavigationController.m */,
+				CEB9660F20946ACF00B49CA1 /* UIViewController+HBD.h */,
+				CEB9661020946AD000B49CA1 /* UIViewController+HBD.m */,
 				CE2705902086F1A80041CCF0 /* Info.plist */,
 				CE2705912086F1A80041CCF0 /* main.m */,
 				CE2705882086F1A80041CCF0 /* CFBaseProject.xcdatamodeld */,
@@ -296,10 +311,13 @@
 			files = (
 				CE27058A2086F1A80041CCF0 /* CFBaseProject.xcdatamodeld in Sources */,
 				CE488C482088767900CC824F /* ViewController+extension.m in Sources */,
+				CEB9661720946AD000B49CA1 /* HBDNavigationBar.m in Sources */,
 				CE2705842086F1A70041CCF0 /* ViewController.m in Sources */,
 				CE2705922086F1A80041CCF0 /* main.m in Sources */,
 				CE2705812086F1A70041CCF0 /* AppDelegate.m in Sources */,
 				CE488C4B2088787500CC824F /* UINavigationController+QMUI.m in Sources */,
+				CEB9661620946AD000B49CA1 /* HBDNavigationController.m in Sources */,
+				CEB9661520946AD000B49CA1 /* UIViewController+HBD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
