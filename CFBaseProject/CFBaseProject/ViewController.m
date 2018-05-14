@@ -9,8 +9,8 @@
 #import "ViewController.h"
 #import "UINavigationController+QMUI.h"
 #import "UIViewController+HBD.h"
-#import "HBDNavigationController.h"
-//#import "YPGradientDemoViewController.h"
+//#import "HBDNavigationController.h"
+
 
 @interface ViewController ()<UINavigationControllerBackButtonHandlerProtocol>
 
