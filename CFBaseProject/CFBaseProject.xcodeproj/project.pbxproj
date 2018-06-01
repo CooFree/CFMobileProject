@@ -16,11 +16,13 @@
 		CE2705922086F1A80041CCF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2705912086F1A80041CCF0 /* main.m */; };
 		CE27059C2086F1A80041CCF0 /* CFBaseProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE27059B2086F1A80041CCF0 /* CFBaseProjectTests.m */; };
 		CE2705A72086F1A80041CCF0 /* CFBaseProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2705A62086F1A80041CCF0 /* CFBaseProjectUITests.m */; };
+		CE3AC38720BFFC620092B645 /* YPGradientDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3AC38620BFFC600092B645 /* YPGradientDemoViewController.m */; };
 		CE69C86020A97A04003BF4DE /* HBDNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CE69C85820A97A04003BF4DE /* HBDNavigationBar.m */; };
 		CE69C86120A97A04003BF4DE /* HBDNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE69C85A20A97A04003BF4DE /* HBDNavigationController.m */; };
 		CE69C86220A97A05003BF4DE /* UIViewController+HBD.m in Sources */ = {isa = PBXBuildFile; fileRef = CE69C85C20A97A04003BF4DE /* UIViewController+HBD.m */; };
 		CE69C86320A97A05003BF4DE /* ViewController+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CE69C85F20A97A04003BF4DE /* ViewController+extension.m */; };
 		CE69C86620A97A2D003BF4DE /* UINavigationController+QMUI.m in Sources */ = {isa = PBXBuildFile; fileRef = CE69C86420A97A2D003BF4DE /* UINavigationController+QMUI.m */; };
+		CEAE361820C0D4A400DDC125 /* lakeside_sunset.png in Resources */ = {isa = PBXBuildFile; fileRef = CEAE361720C0D4A300DDC125 /* lakeside_sunset.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		CE2705A22086F1A80041CCF0 /* CFBaseProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CFBaseProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2705A62086F1A80041CCF0 /* CFBaseProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFBaseProjectUITests.m; sourceTree = "<group>"; };
 		CE2705A82086F1A80041CCF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE3AC38520BFFC5C0092B645 /* YPGradientDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPGradientDemoViewController.h; sourceTree = "<group>"; };
+		CE3AC38620BFFC600092B645 /* YPGradientDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPGradientDemoViewController.m; sourceTree = "<group>"; };
 		CE69C85720A97A04003BF4DE /* HBDNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBDNavigationBar.h; sourceTree = "<group>"; };
 		CE69C85820A97A04003BF4DE /* HBDNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBDNavigationBar.m; sourceTree = "<group>"; };
 		CE69C85920A97A04003BF4DE /* HBDNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBDNavigationController.h; sourceTree = "<group>"; };
@@ -68,6 +72,7 @@
 		CE69C85F20A97A04003BF4DE /* ViewController+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+extension.m"; sourceTree = "<group>"; };
 		CE69C86420A97A2D003BF4DE /* UINavigationController+QMUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+QMUI.m"; sourceTree = "<group>"; };
 		CE69C86520A97A2D003BF4DE /* UINavigationController+QMUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+QMUI.h"; sourceTree = "<group>"; };
+		CEAE361720C0D4A300DDC125 /* lakeside_sunset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lakeside_sunset.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +129,9 @@
 				CEFDC8AA208EC8AB0053D5BC /* Category */,
 				CE2705822086F1A70041CCF0 /* ViewController.h */,
 				CE2705832086F1A70041CCF0 /* ViewController.m */,
+				CE3AC38520BFFC5C0092B645 /* YPGradientDemoViewController.h */,
+				CE3AC38620BFFC600092B645 /* YPGradientDemoViewController.m */,
+				CEAE361720C0D4A300DDC125 /* lakeside_sunset.png */,
 				CE2705852086F1A80041CCF0 /* Main.storyboard */,
 				CE27058B2086F1A80041CCF0 /* Assets.xcassets */,
 				CE27058D2086F1A80041CCF0 /* LaunchScreen.storyboard */,
@@ -299,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE27058F2086F1A80041CCF0 /* LaunchScreen.storyboard in Resources */,
+				CEAE361820C0D4A400DDC125 /* lakeside_sunset.png in Resources */,
 				CE27058C2086F1A80041CCF0 /* Assets.xcassets in Resources */,
 				CE2705872086F1A80041CCF0 /* Main.storyboard in Resources */,
 			);
@@ -333,6 +342,7 @@
 				CE2705812086F1A70041CCF0 /* AppDelegate.m in Sources */,
 				CE69C86120A97A04003BF4DE /* HBDNavigationController.m in Sources */,
 				CE69C86220A97A05003BF4DE /* UIViewController+HBD.m in Sources */,
+				CE3AC38720BFFC620092B645 /* YPGradientDemoViewController.m in Sources */,
 				CE69C86620A97A2D003BF4DE /* UINavigationController+QMUI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
