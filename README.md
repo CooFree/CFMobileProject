@@ -1,7 +1,8 @@
 # CFMobileProject
 
 ##### 1.拦截系统默认返回按钮事件 （UINavigationController）
-<pre><code>
+
+```objective-c
 #pragma mark - UINavigationControllerBackButtonHandlerProtocol
 -(BOOL)shouldHoldBackButtonEvent {
     return NO;
@@ -14,6 +15,7 @@
             [self.navigationController popViewControllerAnimated:YES];
         }];
         UIAlertAction *continueAction = [UIAlertAction actionWithTitle:@"继续编辑" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+
         }];
         [alertController addAction:backActioin];
         [alertController addAction:continueAction];
@@ -23,10 +25,12 @@
         return YES;
     }
 }
-</code></pre>
+
+```
 
 ##### 2.导航栏界面切换时颜色效果 （NavigationBar）
-<pre>
+
+```objective-c
 -(UIViewController *)createDemoViewController {
     ViewController *vc = [ViewController new];
     vc.hbd_barShadowHidden = NO;
@@ -41,4 +45,6 @@
     vc.hbd_barTintColor = color;
     return vc;
 }
-</pre>
+
+```
+
