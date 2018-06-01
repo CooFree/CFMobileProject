@@ -28,13 +28,22 @@
     [self.view addSubview:btn];
 }
 - (void)btnClick {
-//    ViewController *vc = [ViewController new];
-//    UIViewController *vc = [self createDemoViewController];
-    UIViewController *vc = [YPGradientDemoViewController new];
-    [self.navigationController pushViewController:vc animated:YES];
+    if (self.index==0) {
+        ViewController *vc = [ViewController new];
+        vc.index=1;
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (self.index==1) {
+        ViewController *vc = [self createDemoViewController];
+        vc.index=2;
+        [self.navigationController pushViewController:vc animated:YES];
+    }else {
+        UIViewController *vc = [YPGradientDemoViewController new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    
 }
 
-- (UIViewController *)createDemoViewController {
+- (ViewController *)createDemoViewController {
     ViewController *vc = [ViewController new];
     
     vc.hbd_barShadowHidden = NO;
